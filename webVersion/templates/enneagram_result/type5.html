@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enneagram result - Characterify</title>
+    <link rel="stylesheet" href="/static/temperament_result.css">
+    <link rel="stylesheet" href="../../static/nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Characterify</h4>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/learn">Article</a></li>
+ 
+            <li class="dropdown5">
+             <a href="/listtest">Test<span class="arrow-down"></span></a>
+            <ul class="inner-dropdown">
+                <li><a href="/beforembti">MBTI Test</a></li>
+                <li><a href="/beforetemperament">4 Temperament Test</a></li>
+                <li><a href="/beforeennegram">Enneagram Test</a></li>
+                <li><a href="/beforeocean">OCEAN Test</a></li>
+            </ul>
+            </li>
+
+            <li><a href="/about">About</a></li>
+        </ul>
+    
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+<div class="deskripsi">
+
+<h1>Your Enneagram Type: 5 - The Investigator</h1>
+
+<h2>Score Detail</h2>
+<ul>
+{% for t, s in scores.items() %}
+<li>Type {{ t }} : {{ s }}</li>
+{% endfor %}
+</ul>
+
+<h2>Chart</h2>
+<img src="/static/{{ chart }}" alt="Enneagram Chart">
+
+<h2>Description</h2>
+<p>
+Tipe Lima adalah pribadi yang sangat mengutamakan pengetahuan, pemikiran logis, dan pemahaman mendalam tentang dunia. Mereka merasa paling nyaman saat bisa mengamati, menganalisis, dan mempelajari sesuatu secara mandiri. Bagi Tipe Lima, pengetahuan adalah bentuk perlindungan diri, karena dengan memahami sesuatu mereka merasa lebih aman dan siap menghadapi kenyataan.
+</p>
+<p>
+Mereka cenderung introvert, tenang, dan selektif dalam berinteraksi. Tipe Lima tidak suka pembicaraan kosong dan lebih menikmati diskusi yang bermakna, ilmiah, atau filosofis. Mereka senang menyendiri untuk mengisi ulang energi dan memperdalam minat mereka, seperti membaca, meneliti, atau mengeksplorasi ide-ide kompleks.
+</p>
+<p>
+Ketakutan terbesar Tipe Lima adalah merasa kewalahan oleh tuntutan hidup, baik dari diri sendiri maupun dari orang lain. Mereka takut tidak memiliki cukup energi, waktu, atau sumber daya untuk menghadapi dunia. Karena itu, mereka sering menjaga jarak emosional agar tetap merasa aman dan terkendali.
+</p>
+<p>
+    Di sisi positif, Tipe Lima adalah pemikir yang tajam, objektif, dan inovatif. Mereka mampu melihat masalah dari sudut pandang yang unik dan memberikan solusi yang mendalam. Ketika mampu menyeimbangkan logika dan emosi, Tipe Lima dapat menjadi sumber kebijaksanaan dan pengetahuan yang sangat berharga bagi orang-orang di sekitarnya.
+</p>
+
+<h3>Strengths</h3>
+<ul>
+<li>Analitis</li>
+<li>Mandiri</li>
+<li>Objektif</li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li>Menarik diri</li>
+<li>Overthinking</li>
+<li>Kurang ekspresif</li>
+</ul>
+
+<h3>Growth Tips</h3>
+<ul>
+<li>Berbagi pikiran</li>
+<li>Terlibat sosial</li>
+<li>Menjaga keseimbangan hidup</li>
+</ul>
+
+</div>
+<script src="/script"></script>
+</body>
+</html>
