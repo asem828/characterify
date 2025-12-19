@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enneagram result - Characterify</title>
+    <link rel="stylesheet" href="/static/temperament_result.css">
+    <link rel="stylesheet" href="../../static/nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Characterify</h4>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/learn">Article</a></li>
+ 
+            <li class="dropdown5">
+             <a href="/listtest">Test<span class="arrow-down"></span></a>
+            <ul class="inner-dropdown">
+                <li><a href="/beforembti">MBTI Test</a></li>
+                <li><a href="/beforetemperament">4 Temperament Test</a></li>
+                <li><a href="/beforeennegram">Enneagram Test</a></li>
+                <li><a href="/beforeocean">OCEAN Test</a></li>
+            </ul>
+            </li>
+
+            <li><a href="/about">About</a></li>
+        </ul>
+    
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+<div class="deskripsi">
+
+<h1>Your Enneagram Type: 7 - The Enthusiast</h1>
+
+<h2>Score Detail</h2>
+<ul>
+{% for t, s in scores.items() %}
+<li>Type {{ t }} : {{ s }}</li>
+{% endfor %}
+</ul>
+
+<h2>Chart</h2>
+<img src="/static/{{ chart }}" alt="Enneagram Chart">
+
+<h2>Description</h2>
+<p>
+Tipe Tujuh adalah pribadi yang optimis, ceria, dan penuh ide.
+</p>
+<p>
+Mereka menghindari rasa sakit dengan mencari pengalaman menyenangkan.
+</p>
+<p>
+Pertumbuhan terjadi saat mereka mampu menghadapi emosi sulit.
+</p>
+
+<h3>Strengths</h3>
+<ul>
+<li>Optimis</li>
+<li>Kreatif</li>
+<li>Energik</li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li>Mudah terdistraksi</li>
+<li>Impulsif</li>
+<li>Menghindari masalah</li>
+</ul>
+
+<h3>Growth Tips</h3>
+<ul>
+<li>Melatih fokus</li>
+<li>Menghadapi emosi</li>
+<li>Menjalani hidup dengan sadar</li>
+</ul>
+
+</div>
+</body>
+<script src="/script"></script>
+</html>

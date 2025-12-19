@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enneagram result - Characterify</title>
+    <link rel="stylesheet" href="/static/temperament_result.css">
+    <link rel="stylesheet" href="../../static/nav.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Characterify</h4>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/learn">Article</a></li>
+ 
+            <li class="dropdown5">
+             <a href="/listtest">Test<span class="arrow-down"></span></a>
+            <ul class="inner-dropdown">
+                <li><a href="/beforembti">MBTI Test</a></li>
+                <li><a href="/beforetemperament">4 Temperament Test</a></li>
+                <li><a href="/beforeennegram">Enneagram Test</a></li>
+                <li><a href="/beforeocean">OCEAN Test</a></li>
+            </ul>
+            </li>
+
+            <li><a href="/about">About</a></li>
+        </ul>
+    
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+<div class="deskripsi">
+
+<h1>Your Enneagram Type: 4 - The Individualist</h1>
+
+<h2>Score Detail</h2>
+<ul>
+{% for t, s in scores.items() %}
+<li>Type {{ t }} : {{ s }}</li>
+{% endfor %}
+</ul>
+
+<h2>Chart</h2>
+<img src="/static/{{ chart }}" alt="Enneagram Chart">
+
+<h2>Description</h2>
+<p>
+Tipe Empat, yang dikenal sebagai “The Individualist”, adalah pribadi yang sangat menghargai keunikan, keaslian, dan kedalaman emosi. Mereka memiliki keinginan kuat untuk menjadi diri sendiri secara autentik dan tidak ingin disamakan dengan orang lain. Bagi Tipe Empat, hidup adalah perjalanan menemukan makna, identitas, dan ekspresi diri yang jujur. Mereka sering tertarik pada seni, musik, penulisan, dan segala bentuk ekspresi kreatif karena bidang tersebut memungkinkan mereka menuangkan perasaan terdalam mereka.
+</p>
+<p>
+Orang dengan tipe ini sangat peka terhadap emosi, baik emosi diri sendiri maupun orang lain. Mereka mampu merasakan perasaan secara intens dan sering merenungkan makna hidup, hubungan, dan pengalaman pribadi. Namun, Tipe Empat memiliki ketakutan mendasar bahwa mereka “cacat” atau berbeda secara negatif dari orang lain. Karena itu, mereka cenderung membandingkan diri dengan orang lain dan merasa kurang atau tidak dipahami.
+</p>
+<p>
+Tipe Empat juga bisa menjadi sangat introspektif dan terkadang terjebak dalam perasaan sedih atau melankolis. Meski begitu, empati, kedalaman perasaan, dan keaslian mereka membuat mereka menjadi pribadi yang hangat dan penuh warna. Saat berkembang dengan baik, Tipe Empat mampu menerima diri mereka apa adanya dan menjadi sumber inspirasi bagi orang lain melalui kejujuran dan kreativitas mereka.
+</p>
+
+<h3>Strengths</h3>
+<ul>
+<li>Kreatif</li>
+<li>Autentik</li>
+<li>Empatik</li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li>Mudah larut emosi</li>
+<li>Merasa kurang</li>
+<li>Mood swing</li>
+</ul>
+
+<h3>Growth Tips</h3>
+<ul>
+<li>Berpijak pada realitas</li>
+<li>Menjaga stabilitas emosi</li>
+<li>Melatih rasa syukur</li>
+</ul>
+
+</div>
+<script src="/script"></script>
+</body>
+</html>
