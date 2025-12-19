@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('44.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.deskripsi {
+    border: 1.5px solid #000000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    margin: 15px 275px;
+    background-color: rgb(253, 254, 255);
+}
+.deskripsi p{
+    margin: 20px 15px;
+}
+
+ul li{
+    margin: 10px 20px;
+}
+
+img {
+    width: 500px;
+    height: 200px;
+    margin: 20px 60px;
+}
+
+p  {
+    text-align: justify;
+}
+@media screen and (max-width: 576px){
+  .deskripsi{
+    margin: 20px 2%;
+  }
+  img {
+    width: 350px;
+    height: 200px;
+    margin: 20px 5%;
+}
+}

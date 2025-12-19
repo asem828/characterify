@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('44.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro {
+    border: 1.5px solid #000000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    max-width: 730px;
+    margin: 15px 275px;
+    background-color: rgb(218, 219, 219);
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p {
+    margin-left: 15px ;
+    margin: 10px;
+}
+
+.petunjuk {
+    text-align: left;
+    margin: 5px;
+}
+
+h6 {
+    font-size: 17px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #6f00ffd5, #ae51ff,#860fd5ce);
+    border: 0.5px solid rgb(134, 89, 250);
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 500px;
+    margin: 20px 70px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(218, 219, 219);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    max-width: 730px;
+    text-align: left;
+    margin: 20px 270px;
+}
+
+.info img{
+    width: 120px;
+    height: 120px;
+    margin: 3px 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.info p b{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 576px){
+    .intro,.info{
+        max-width: 100%;
+        margin: 20px 30px;
+        padding: auto;
+        
+    }
+    .answer{
+        flex-wrap: nowrap;
+    }
+    .info{
+        margin: 20 2%;
+        max-width: 100%;
+    }
+}

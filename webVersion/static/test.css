@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-image: url('back7.jpg'),linear-gradient(white);
+    background-repeat: no-repeat,repeat;
+    background-size: cover,cover;
+    background-position: center,center;
+    height: 100vh;
+    
+}
+.element{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+    margin-right: 0;
+
+}
+.teks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 70px;
+    color: rgb(0, 0, 0);
+}
+
+.teks h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #0a1931;
+}
+
+.teks h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.teks p{
+    padding-top: 10px;
+    padding-left: 0;
+    margin-right: 65%;
+
+}
+
+.teks h6{
+    font-size: 15px;
+    color: aliceblue;
+    text-align: center;
+    padding: 3px 0;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 900px;
+    background: linear-gradient(to bottom, #6f00ffd5, #ae51ff,#860fd5ce);
+    border: 0.5px solid rgb(134, 89, 250);
+    border-radius: 10px;
+}
+
+.element .teks a:nth-last-child(2) {
+    text-decoration: none;
+
+}
+
+
+.element .teks a:nth-last-child(1) {
+  margin-left: 65px;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 576px){
+    body{
+    background-image: url('backhp1.jpg'),linear-gradient(#86b6da);
+    overflow-y: hidden;
+    background-position-y:-30px;
+    }
+
+    .teks h6{
+    padding: 7px 45px;
+    white-space: nowrap;
+    margin-left: 65px;
+    }
+    .element{
+        padding-top: 325px;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,120 @@
+
+p {
+    text-align: center;
+}
+
+h2  {
+    text-align: center;
+    background-color: rgb(163, 162, 255);
+    border-radius: 16px;
+    border: 2px solid #383838;
+    padding: 2%;
+    margin: 20px 20%;
+    color: #ffffff;
+}
+
+
+.question-box {
+    border: 1.5px solid #000000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    margin: 15px 20%;
+    background-color: rgb(218, 219, 219);
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('44.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btn {
+    background: #4a6cf7;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 45%;
+    
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.answer {
+    display: flex;
+    justify-content: space-evenly; /* jarak rata */
+    align-items: center;
+    margin: 30px;
+    flex-wrap: wrap; /* agar responsif */
+    gap: 20px; /* tambahan agar lebih rapi */
+}
+
+.answer input {
+    position: absolute;
+    opacity: 0; /* sembunyikan radio asli */
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #2196F3;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0; /* jangan mengecil */
+}
+
+.answer input:checked ~ .check {
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.answer input:checked ~ .check::after {
+    display: block;
+}
+
+.answer .check::after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2196F3;
+}
+
+.setuju {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 10px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 576px){
+    .question-box{
+        margin: 20px 30px;
+        padding: auto;
+        
+    }
+    .answer{
+        flex-wrap: nowrap;
+    }
+}

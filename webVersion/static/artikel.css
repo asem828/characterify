@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background-image: url('44.jpg'),linear-gradient(#86b6da);
+    background-repeat: no-repeat,repeat;
+    background-size: cover,cover;
+    background-position: center,center;
+    height: 100vh;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    line-height: 0.7cm;
+}
+
+.artikel {
+    border: 1.5px solid #000000;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    width: 70%;
+    margin: 2px 0px;
+    margin-left: 13%;
+    background-color: lightgray;
+}
+
+header,section{
+    margin: 25px 0;
+}
+
+img {
+    width: 30%;
+}
+
+@media screen and (max-width: 576px){
+    .artikel{
+        margin: 20px 2%;
+        width: 90%;
+        padding-right: 0;
+    }
+
+}

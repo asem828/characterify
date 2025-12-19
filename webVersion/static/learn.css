@@ -1,0 +1,67 @@
+
+body {
+    font-family: sans-serif;
+    background-image: url('44.jpg'),linear-gradient(#86b6da);
+    background-repeat: no-repeat,repeat;
+    background-size: cover,cover;
+    background-position: center,center;
+    height: 100vh;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    line-height: 0.7cm;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(163, 162, 255);
+    border-radius: 16px;
+    border: 2px solid #272727;
+    padding: 2%;
+    margin: 20px 20%;
+    color: aliceblue;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.subHome {  
+    padding-top: 40px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin:0 35px ;
+}
+.subHome img{
+    width: auto;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card{
+    background-color: lightgray;
+    border-radius: 16px;
+    border: 2px solid #000000;
+    padding: 2%;
+}
+h3,p {
+    text-align: center;
+    margin-top:5px ;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 576px){
+ h2 {
+    margin: 10px 2%;
+    padding: 20px;
+
+ }
+}

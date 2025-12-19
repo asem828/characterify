@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-image: url('44.jpg'),linear-gradient(#86b6da);
+    background-repeat: no-repeat,repeat;
+    background-size: cover,cover;
+    background-position: center,center;
+    height: 100vh;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    line-height: 0.7cm;
+}
+
+
+.about {
+    border: 1.5px solid #000000;
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+    margin: 15px 200px;
+    background-color: rgb(218, 219, 219);
+}
+
+h3,h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 576px){
+body{
+    background-image: url('44.jpg'),linear-gradient(#ffffff);
+    background-attachment: fixed;
+}
+.about{
+    margin: 20px 2%;
+    padding: 15px 30px;
+}
+}
